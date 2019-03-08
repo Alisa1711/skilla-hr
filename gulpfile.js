@@ -13,7 +13,7 @@ const rigger = require(`gulp-rigger`);
 const babel = require(`gulp-babel`);
 
 gulp.task(`html`, () => {
-  return gulp.src([`*.html`, `!template.html`]).
+  return gulp.src(`*.html`).
     pipe(plumber()).
     pipe(rigger()).
     pipe(gulp.dest(`build`)).
@@ -37,10 +37,10 @@ gulp.task(`style`, () => {
       mqpacker({sort: true})
     ])).
     pipe(gulp.dest(`build/css`)).
-    pipe(server.stream()).
     pipe(minify()).
     pipe(rename(`style.min.css`)).
-    pipe(gulp.dest(`build/css`));
+    pipe(gulp.dest(`build/css`)).
+    pipe(server.stream());
 });
 
 gulp.task(`scripts`, () => {
