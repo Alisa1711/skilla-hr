@@ -1,0 +1,47 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  color: $white;
+  background-color: $dark-blue;
+}
+
+.header__top {
+  @include outliner;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__nav-link {
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: $white;
+
+  & + & {
+    margin-left: 3.5em;
+  }
+}
+
+.header__main {
+  @include outliner;
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__big-logo {
+  display: block;
+  width: 21rem;
+}
+
+.header__heading {
+  width: 35rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  line-height: 1.6;
+  text-align: center;
+}
