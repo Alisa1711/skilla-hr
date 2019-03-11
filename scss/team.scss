@@ -1,0 +1,68 @@
+.team {
+  box-sizing: border-box;
+  height: 100vh;
+  background:
+    url("../img/team.svg") no-repeat,
+    linear-gradient($yellow 0%, $dark-yellow 100%);
+  background-size: 100% auto;
+  background-position: center;
+
+  @media screen and(max-width: $mobile) {
+    padding-top: 1rem;
+  }
+
+  @media screen and(max-width: $tablet) {
+    padding-top: 4rem;
+    background-position: top 10rem center, center;
+  }
+
+  @media screen and(min-width: $desktop) {
+    padding-top: 6rem;
+    padding-left: 6.75rem;
+    padding-right: 6.75rem;
+  }
+}
+
+.team__member {
+  display: flex;
+  align-items: center;
+
+  @media screen and(max-width: $mobile) {
+    flex-direction: column;
+  }
+}
+
+.team__photo {
+  // @include outliner;
+  box-sizing: border-box;
+  margin-top: auto;
+  width: 50%;
+  height: 90%;
+
+  @media screen and(max-width: $mobile) {
+    order: 2;
+  }
+}
+
+.team__img {
+  // @include outliner;
+  display: block;
+  margin-left: auto;
+
+  @media screen and(max-width: $tablet) and(min-width: $mobile) {
+    float: right;
+  }
+
+  @media screen and(min-width: $tablet) {
+    height: 100%;
+  }
+}
+
+.team__info {
+  // @include outliner;
+  @media screen and(min-width: $tablet) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 30rem;
+  }
+}

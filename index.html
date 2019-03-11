@@ -22,23 +22,27 @@
           <a href="javascript:void(0);" class="header__nav-link">руководство</a>
           <a href="javascript:void(0);" class="header__nav-link">контакты</a>
         </nav>
+        <button class="header__burger">
+          <svg width="32" height="25" viewBox="0 0 32 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H32V3H0V0ZM0 11H32V14H0V11ZM32 22H0V25H32V22Z" fill="white"/></svg>
+        </button>
         <a href="javascript:void(0);" class="header__instagramm"><span class="visually-hidden">Instagramm</span><svg width="32" height="32"><path d="M16 2.884C20.272 2.884 20.7787 2.9 22.4667 2.97733C26.8027 3.17467 28.828 5.232 29.0253 9.536C29.1027 11.2227 29.1173 11.7293 29.1173 16.0013C29.1173 20.2747 29.1013 20.78 29.0253 22.4667C28.8267 26.7667 26.8067 28.828 22.4667 29.0253C20.7787 29.1027 20.2747 29.1187 16 29.1187C11.728 29.1187 11.2213 29.1027 9.53467 29.0253C5.188 28.8267 3.17333 26.76 2.976 22.4653C2.89867 20.7787 2.88267 20.2733 2.88267 16C2.88267 11.728 2.9 11.2227 2.976 9.53467C3.17467 5.232 5.19467 3.17333 9.53467 2.976C11.2227 2.9 11.728 2.884 16 2.884ZM16 0C11.6547 0 11.1107 0.0186667 9.404 0.096C3.59333 0.362667 0.364 3.58667 0.0973333 9.40267C0.0186667 11.1107 0 11.6547 0 16C0 20.3453 0.0186667 20.8907 0.096 22.5973C0.362667 28.408 3.58667 31.6373 9.40267 31.904C11.1107 31.9813 11.6547 32 16 32C20.3453 32 20.8907 31.9813 22.5973 31.904C28.4027 31.6373 31.64 28.4133 31.9027 22.5973C31.9813 20.8907 32 20.3453 32 16C32 11.6547 31.9813 11.1107 31.904 9.404C31.6427 3.59867 28.4147 0.364 22.5987 0.0973333C20.8907 0.0186667 20.3453 0 16 0V0ZM16 7.784C11.4627 7.784 7.784 11.4627 7.784 16C7.784 20.5373 11.4627 24.2173 16 24.2173C20.5373 24.2173 24.216 20.5387 24.216 16C24.216 11.4627 20.5373 7.784 16 7.784ZM16 21.3333C13.0547 21.3333 10.6667 18.9467 10.6667 16C10.6667 13.0547 13.0547 10.6667 16 10.6667C18.9453 10.6667 21.3333 13.0547 21.3333 16C21.3333 18.9467 18.9453 21.3333 16 21.3333ZM24.5413 5.54C23.48 5.54 22.62 6.4 22.62 7.46C22.62 8.52 23.48 9.38 24.5413 9.38C25.6013 9.38 26.46 8.52 26.46 7.46C26.46 6.4 25.6013 5.54 24.5413 5.54Z" fill="white"/></svg></a>
       </div>
       <div class="header__main">
         <img src="img/logo-full.svg" alt="Skilla" class="header__big-logo">
-        <h1 class="header__heading"><span class="visually-hidden">Skilla</span>Мы делаем бизнес-образование доступным для каждого</h1>
+        <h1 class="header__heading"><span class="visually-hidden">Skilla</span>Мы делаем <nobr>бизнес-образование</nobr> доступным для каждого</h1>
         <button class="play-button"><span class="visually-hidden">Смотреть видео</span></button>
         <span class="header__descr">Cмотри, как все устроено</span>
       </div>
   </header>
+
   <section class="conditions screen">
     <div class="conditions__inner">
-      <div class="column column--left">
+      <div class="conditions__left">
         <p class="conditions__primary-text">Мы&nbsp;обучаем предпринимателей и&nbsp;даем им&nbsp;мощный инструмент для развития бизнеса</p>
         <p class="conditions__secondary-text"><span>Skilla</span>&nbsp;&mdash; это то&nbsp;рабочее пространство, где можно смело заявлять о&nbsp;себе, находить новых друзей и&nbsp;создавать креативные проекты</p>
       </div>
-      <div class="column column--right">
-        <p class="conditins__list-heading">По умолчанию</p>
+      <div class="conditions__right">
+        <p class="heading-2">По умолчанию</p>
         <ul class="conditions__list">
           <li class="conditions__item">Официальное оформление</li>
           <li class="conditions__item">Конкурентная зарплата</li>
@@ -49,5 +53,208 @@
       </div>
     </div>
   </section>
+
+  <section class="office slider">
+    <div class="slider__info">
+      <p class="heading-2">Среда <span class="accent">&</span><br>культура</p>
+      <p>Наша команда творит в&nbsp;БЦ&nbsp;&laquo;Кролл&raquo; в&nbsp;стильном и&nbsp;комфортном лофте в&nbsp;десяти минутах ходьбы от&nbsp;метро Ладожская</p>
+    </div>
+    <div class="slider__content slider__content--half">
+      <picture class="slide active">
+        <source srcset="img/office/office-01__landscape_medium.jpg" media="(max-width: 1024px) and (orientation: landscape)">
+        <source srcset="img/office/office-01__landscape_large_1x.jpg" media="(min-width: 1024px)">
+        <img srcset="img/office/office-01__landscape_768.jpg" alt="Описание фотографии">
+      </picture>
+      <picture class="slide">
+        <source srcset="img/office/office-01__landscape_medium.jpg" media="(max-width: 1024px) and (orientation: landscape)">
+        <source srcset="img/office/office-01__landscape_768_mirror.jpg" media="(min-width: 1024px)">
+        <img srcset="img/office/office-01__landscape_768_mirror.jpg" alt="Описание фотографии">
+      </picture>
+      <picture class="slide">
+        <source srcset="img/office/office-01__landscape_medium.jpg" media="(max-width: 1024px) and (orientation: landscape)">
+        <source srcset="img/office/office-01__landscape_large_1x.jpg" media="(min-width: 1024px)">
+        <img srcset="img/office/office-01__landscape_768.jpg" alt="Описание фотографии">
+      </picture>
+      <ul class="slider__nav"></ul>
+      <button class="slider__controls slider__controls--prev"><svg width="25" height="8" viewBox="0 0 25 8"><path d="M0.646446 4.35355C0.451185 4.15829 0.451185 3.84171 0.646446 3.64645L3.82843 0.464466C4.02369 0.269204 4.34027 0.269204 4.53553 0.464466C4.7308 0.659728 4.7308 0.976311 4.53553 1.17157L1.70711 4L4.53553 6.82843C4.7308 7.02369 4.7308 7.34027 4.53553 7.53553C4.34027 7.7308 4.02369 7.7308 3.82843 7.53553L0.646446 4.35355ZM25 4.5H1V3.5H25V4.5Z"/></svg></button>
+      <button class="slider__controls slider__controls--next"><svg width="25" height="8" viewBox="0 0 25 8"><path d="M24.3536 4.35355C24.5488 4.15829 24.5488 3.84171 24.3536 3.64645L21.1716 0.464466C20.9763 0.269204 20.6597 0.269204 20.4645 0.464466C20.2692 0.659728 20.2692 0.976311 20.4645 1.17157L23.2929 4L20.4645 6.82843C20.2692 7.02369 20.2692 7.34027 20.4645 7.53553C20.6597 7.7308 20.9763 7.7308 21.1716 7.53553L24.3536 4.35355ZM0 4.5H24V3.5H0V4.5Z"/></svg></button>
+    </div>
+  </section>
+
+  <section class="team screen slider__content">
+    <p class="heading-2 heading-2--light">Команда</p>
+    <div class="team__member slide active">
+      <picture class="team__photo">
+        <source srcset="img/team/team-01_1x_desktop.png 1x, img/team/team-01_2x.png 2x" media="(min-width: 1024px)">
+        <img class="team__img" srcset="img/team/team-01_1x_mobile.png" alt="Никита">
+      </picture>
+      <div class="team__info">
+        <p class="quote">В&nbsp;Skilla работают замечательные люди и&nbsp;все такое прочее про рабочий процесс, интересные задачи и&nbsp;т.п.</p>
+        <p class="name">Никита</p>
+        <p class="position">Ведущий интернет-маркетолог, 2&nbsp;года в&nbsp;Skilla</p>
+      </div>
+    </div>
+    <div class="team__member slide">
+      <picture class="team__photo">
+        <source srcset="img/team/team-01_1x_desktop.png 1x, img/team/team-01_2x.png 2x" media="(min-width: 1024px)">
+        <img class="team__img" srcset="img/team/team-01_1x_mobile.png" alt="Никита">
+      </picture>
+      <div class="team__info">
+        <p class="quote">В&nbsp;Skilla работают замечательные люди и&nbsp;все такое прочее про рабочий процесс, интересные задачи и&nbsp;т.п.</p>
+        <p class="name">Никита</p>
+        <p class="position">Ведущий интернет-маркетолог, 2&nbsp;года в&nbsp;Skilla</p>
+      </div>
+    </div>
+    <ul class="slider__nav slider__nav--light"></ul>
+    <button class="slider__controls slider__controls--prev"><svg width="25" height="8" viewBox="0 0 25 8"><path d="M0.646446 4.35355C0.451185 4.15829 0.451185 3.84171 0.646446 3.64645L3.82843 0.464466C4.02369 0.269204 4.34027 0.269204 4.53553 0.464466C4.7308 0.659728 4.7308 0.976311 4.53553 1.17157L1.70711 4L4.53553 6.82843C4.7308 7.02369 4.7308 7.34027 4.53553 7.53553C4.34027 7.7308 4.02369 7.7308 3.82843 7.53553L0.646446 4.35355ZM25 4.5H1V3.5H25V4.5Z"/></svg></button>
+    <button class="slider__controls slider__controls--next"><svg width="25" height="8" viewBox="0 0 25 8"><path d="M24.3536 4.35355C24.5488 4.15829 24.5488 3.84171 24.3536 3.64645L21.1716 0.464466C20.9763 0.269204 20.6597 0.269204 20.4645 0.464466C20.2692 0.659728 20.2692 0.976311 20.4645 1.17157L23.2929 4L20.4645 6.82843C20.2692 7.02369 20.2692 7.34027 20.4645 7.53553C20.6597 7.7308 20.9763 7.7308 21.1716 7.53553L24.3536 4.35355ZM0 4.5H24V3.5H0V4.5Z"/></svg></button>
+  </section>
+
+  <section class="benefits screen">
+    <p class="heading-2">У нас хорошо</p>
+    <ul class="benefits__list">
+      <li class="benefits__item">
+        <span class="benefits__title">уютный<br>open space</span>
+        <div class="benefits__descr">
+          <p class="benefits__descr-title">Уютный open-space</p>
+          <span>В офисе мы общаемся, креативим и веселимся. У нас нет места высоким перегородкам</span>
+        </div>
+      </li>
+      <li class="benefits__item">
+        <span class="benefits__title">дружелюбная<br>атомсфера</span>
+        <div class="benefits__descr">
+          <p class="benefits__descr-title">Уютный open-space</p>
+          <span>В офисе мы общаемся, креативим и веселимся. У нас нет места высоким перегородкам</span>
+        </div>
+      </li>
+      <li class="benefits__item">
+        <span class="benefits__title">современные<br>технологии</span>
+        <div class="benefits__descr">
+          <p class="benefits__descr-title">Уютный open-space</p>
+          <span>В офисе мы общаемся, креативим и веселимся. У нас нет места высоким перегородкам</span>
+        </div>
+      </li>
+      <li class="benefits__item">
+        <span class="benefits__title">карьерный<br>рост</span>
+        <div class="benefits__descr">
+          <p class="benefits__descr-title">Уютный open-space</p>
+          <span>В офисе мы общаемся, креативим и веселимся. У нас нет места высоким перегородкам</span>
+        </div>
+      </li>
+      <li class="benefits__item">
+        <span class="benefits__title">вкусные чай<br>и кофе</span>
+        <div class="benefits__descr">
+          <p class="benefits__descr-title">Уютный open-space</p>
+          <span>В офисе мы общаемся, креативим и веселимся. У нас нет места высоким перегородкам</span>
+        </div>
+      </li>
+      <li class="benefits__item">
+        <span class="benefits__title">плавающий<br>график</span>
+        <div class="benefits__descr">
+          <p class="benefits__descr-title">Уютный open-space</p>
+          <span>В офисе мы общаемся, креативим и веселимся. У нас нет места высоким перегородкам</span>
+        </div>
+      </li>
+      <li class="benefits__item">
+        <span class="benefits__title">совместный<br>отдых на природе</span>
+        <div class="benefits__descr">
+          <p class="benefits__descr-title">Уютный open-space</p>
+          <span>В офисе мы общаемся, креативим и веселимся. У нас нет места высоким перегородкам</span>
+        </div>
+      </li>
+      <li class="benefits__item">
+        <span class="benefits__title">отличное кафе<br>внизу</span>
+        <div class="benefits__descr">
+          <p class="benefits__descr-title">Уютный open-space</p>
+          <span>В офисе мы общаемся, креативим и веселимся. У нас нет места высоким перегородкам</span>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="leader screen">
+    <div class="leader__left">
+      <p class="heading-2">Руководство</p>
+      <div class="leader__info">
+        <p class="quote">В&nbsp;Skilla работают замечательные люди и&nbsp;все такое прочее про рабочий процесс, интересные задачи и&nbsp;т.п.</p>
+        <p class="name">Кирилл Упоров</p>
+        <p class="position">Владелец компании</p>
+      </div>
+    </div>
+    <picture class="leader__photo">
+      <source srcset="img/team/team-01_1x_desktop.png 1x, img/team/team-01_2x.png 2x" media="(min-width: 1024px)">
+      <img class="leader__img" srcset="img/team/team-01_1x_mobile.png" alt="Никита">
+    </picture>
+  </section>
+
+  <section class="slider">
+    <div class="slider__content slider__content--half slider__content--left">
+      <picture class="slide active">
+        <source srcset="img/office/office-01__portrait_small.jpg" media="(max-width: 600px) and (orientation: portrait)">
+        <source srcset="img/office/office-01__portrait_medium.jpg" media="(max-width: 1024px) and (orientation: portrait)">
+        <source srcset="img/office/office-01__landscape_medium.jpg" media="(max-width: 1024px) and (orientation: landscape)">
+        <source srcset="img/office/office-01__landscape_large_1x.jpg" media="(min-width: 1024px)">
+        <img srcset="img/office/office-01__landscape_768.jpg" alt="Описание фотографии">
+      </picture>
+      <picture class="slide">
+        <source srcset="img/office/office-01__portrait_small.jpg" media="(max-width: 600px) and (orientation: portrait)">
+        <source srcset="img/office/office-01__portrait_medium.jpg" media="(max-width: 1024px) and (orientation: portrait)">
+        <source srcset="img/office/office-01__landscape_medium.jpg" media="(max-width: 1024px) and (orientation: landscape)">
+        <source srcset="img/office/office-01__landscape_768_mirror.jpg" media="(min-width: 1024px)">
+        <img srcset="img/office/office-01__landscape_768_mirror.jpg" alt="Описание фотографии">
+      </picture>
+      <picture class="slide">
+        <source srcset="img/office/office-01__portrait_small.jpg" media="(max-width: 600px) and (orientation: portrait)">
+        <source srcset="img/office/office-01__portrait_medium.jpg" media="(max-width: 1024px) and (orientation: portrait)">
+        <source srcset="img/office/office-01__landscape_medium.jpg" media="(max-width: 1024px) and (orientation: landscape)">
+        <source srcset="img/office/office-01__landscape_large_1x.jpg" media="(min-width: 1024px)">
+        <img srcset="img/office/office-01__landscape_768.jpg" alt="Описание фотографии">
+      </picture>
+      <ul class="slider__nav"></ul>
+      <button class="slider__controls slider__controls--prev"><svg width="25" height="8" viewBox="0 0 25 8"><path d="M0.646446 4.35355C0.451185 4.15829 0.451185 3.84171 0.646446 3.64645L3.82843 0.464466C4.02369 0.269204 4.34027 0.269204 4.53553 0.464466C4.7308 0.659728 4.7308 0.976311 4.53553 1.17157L1.70711 4L4.53553 6.82843C4.7308 7.02369 4.7308 7.34027 4.53553 7.53553C4.34027 7.7308 4.02369 7.7308 3.82843 7.53553L0.646446 4.35355ZM25 4.5H1V3.5H25V4.5Z"/></svg></button>
+      <button class="slider__controls slider__controls--next"><svg width="25" height="8" viewBox="0 0 25 8"><path d="M24.3536 4.35355C24.5488 4.15829 24.5488 3.84171 24.3536 3.64645L21.1716 0.464466C20.9763 0.269204 20.6597 0.269204 20.4645 0.464466C20.2692 0.659728 20.2692 0.976311 20.4645 1.17157L23.2929 4L20.4645 6.82843C20.2692 7.02369 20.2692 7.34027 20.4645 7.53553C20.6597 7.7308 20.9763 7.7308 21.1716 7.53553L24.3536 4.35355ZM0 4.5H24V3.5H0V4.5Z"/></svg></button>
+    </div>
+    <div class="slider__info">
+      <p class="heading-2">Атмосфера</p>
+      <p>У&nbsp;нас много активностей: вместе мы&nbsp;покоряем вершины, сплавляемся на&nbsp;байдарках и&nbsp;преодолеваем препятствия</p>
+    </div>
+  </section>
+
+  <section class="contacts screen">
+    <div class="contacts__left">
+      <p class="heading-2">Готов стать частью команды?</p>
+      <p class="contacts__quote quote">Меня зовут Таня. Я&nbsp;ищу сотрудников в&nbsp;Skilla и&nbsp;отвечаю на&nbsp;ваши письма и&nbsp;отклики. Задавайте вопросы, оставляйте отклики на&nbsp;вакансии или отправляйте резюме на&nbsp;будущее.</p>
+      <p class="contacts__mail">hello@skilla.ru</p>
+      <p class="contacts__address"><a href="tel:+78125344567" class="contacts__phone">(812) 534-45-67</a> Санкт-Петербург, пр. Энергетиков 10</p>
+    </div>
+    <picture class="contacts__photo">
+      <source srcset="img/team/team-01_1x_desktop.png 1x, img/team/team-01_2x.png 2x" media="(min-width: 1024px)">
+      <img class="leader__img" srcset="img/team/team-01_1x_mobile.png" alt="Никита">
+    </picture>
+  </section>
+
+  <section class="article screen">
+    <p class="heading-2 article__heading">Как работают в Skilla</p>
+    <div class="article__inner">
+      <p class="quote">Все сотрудники сидят в&nbsp;оупенспейсе. Исключения составляют лишь те&nbsp;отделы, которые работают с&nbsp;конфиденциальной информацией. Например, служба безопасности или HR-отдел...</p>
+      <img class="article__logo-img" src="img/vedomosti-logo.svg" alt="Ведомости">
+      <a href="" class="article__link">источник<svg class="article__link-arrow" width="17" height="16" viewBox="0 0 17 16"><path d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9L16 9V7L0 7L0 9Z"/></svg></a>
+    </div>
+    <div class="article__bg"></div>
+  </section>
+
+  <footer class="footer screen">
+    <div class="footer__inner">
+      <p class="footer__slogan">Вместе<br>мы — <span class="visually-hidden">Skilla</span></p>
+      <img src="img/logo-full.svg" alt="Skilla" class="footer__logo">
+      <a href="" class="footer__link">смотри все вакансии<svg class="footer__link-arrow" width="17" height="16" viewBox="0 0 17 16"><path d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9L16 9V7L0 7L0 9Z"/></svg></a>
+    </div>
+    <div class="footer__copyright">© Skilla. 2019</div>
+  </footer>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/picturefill.min.js"></script>
 </body>
 </html>

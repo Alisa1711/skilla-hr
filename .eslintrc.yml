@@ -8,4 +8,7 @@ env:
   commonjs: true
   jquery: true
 
+rules:
+  no-invalid-this: 'off'
+
 extends: 'htmlacademy/es6'

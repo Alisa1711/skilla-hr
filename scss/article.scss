@@ -1,0 +1,56 @@
+.article {
+  position: relative;
+  display: flex;
+  padding-bottom: 6rem;
+  background-color: rgba($dark-blue, 0.1);
+  background-image: url("../img/article-bg.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+}
+
+.article__heading {
+  width: 50%;
+}
+
+.article__inner {
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  max-width: 34rem;
+}
+
+.article__logo-img {
+  margin-top: 3rem;
+}
+
+.article__link {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+  color: inherit;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  &-arrow {
+    margin-left: 1rem;
+
+    & path {
+      fill: $dark-blue;
+    }
+  }
+}
+
+.article__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 50%;
+  bottom: 0;
+  background-image: url("../img/article-bg-letters.svg");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+}

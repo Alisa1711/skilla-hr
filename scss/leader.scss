@@ -1,0 +1,22 @@
+.leader {
+  display: flex;
+  background: linear-gradient(180deg, rgba(24, 43, 77, 0.1) 25%, rgba(24, 45, 77, 0.3) 100%);
+}
+
+.leader__left {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.leader__info {
+  margin: auto;
+  width: 30rem;
+}
+
+.leader__img {
+  @include outliner;
+  display: block;
+  margin-left: auto;
+  height: 100%;
+}

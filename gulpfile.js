@@ -64,7 +64,7 @@ gulp.task(`imagemin`, [`copy`], () => {
 gulp.task(`copy`, [`html`, `scripts`, `style`], () => {
   return gulp.src([
     `fonts/**/*.{woff,woff2}`,
-    `img/*.*`,
+    `img/**/*.*`,
     `js/*.js`,
     `!js/main.js`
   ], {base: `.`}).

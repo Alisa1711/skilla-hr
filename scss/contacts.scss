@@ -1,0 +1,43 @@
+.contacts {
+  display: flex;
+  background:
+    url("../img/team.svg") no-repeat,
+    linear-gradient($yellow 0%, $dark-yellow 100%);
+  background-size: 100% auto;
+  background-position: center;
+}
+
+.contacts__left {
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35rem;
+}
+
+.contacts__quote {
+  margin-top: 4rem;
+}
+
+.contacts__photo {
+  margin-right: auto;
+}
+
+.contacts__mail {
+  margin: 0;
+  margin-top: 8rem;
+  font-size: 3rem;
+  font-weight: 700;
+  color: $white;
+}
+
+.contacts__address {
+  margin: 0;
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  color: $white;
+}
+
+.contacts__phone {
+  display: block;
+  color: inherit;
+}
