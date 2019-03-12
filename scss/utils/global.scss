@@ -47,18 +47,10 @@ input[type="radio"].visually-hidden {
 
 .screen {
   box-sizing: border-box;
-  padding-top: 1rem;
+  padding-top: 3.5%;
   padding-left: 3.5%;
   padding-right: 3.5%;
   height: 100vh;
-
-  @media screen and(min-width: $tablet) {
-    padding-top: 4rem;
-  }
-
-  @media screen and(min-width: $desktop) {
-    padding-top: 6rem;
-  }
 }
 
 .heading-2 {
@@ -76,6 +68,8 @@ input[type="radio"].visually-hidden {
 .quote {
   position: relative;
   margin: 0;
+  padding-left: 3.5rem;
+  font-size: 1.5rem;
 
   &::before {
     content: "";
@@ -87,90 +81,99 @@ input[type="radio"].visually-hidden {
     background-image: url("../img/quotes.svg");
     background-repeat: no-repeat;
     background-position: center;
-    transform: translateX(-150%);
+    background-size: contain;
   }
 
-  @media screen and(min-width: $tablet) {
-    font-size: 1.5rem;
+  @media screen and(max-width: $mobile) {
+    font-size: 1.125rem;
+
+    &::before {
+      width: 1.75rem;
+      height: 1.75rem;
+    }
   }
 }
 
 .name {
   margin: 0;
+  padding-left: 3.5rem;
   font-size: 3rem;
   font-weight: 700;
   color: $white;
 
-  @media screen and(min-width: $tablet) {
+  @media screen and(min-width: $mobile) {
     margin-top: 8rem;
   }
 }
 
 .position {
   margin: 0;
+  padding-left: 3.5rem;
   font-size: 1.5rem;
   color: $white;
 }
 
-.slider {
+.slider-half {
   @include outliner;
+  position: relative;
   display: flex;
   height: 100vh;
-
-  @media screen and(max-width: $tablet) {
-    flex-direction: column;
-  }
-
-  @media screen and (min-width: $desktop) {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-.slider__content {
-  position: relative;
 
   & img {
     width: auto;
     height: 100%;
   }
 
-  @media screen and(max-width: $tablet) {
-    flex-grow: 1;
-  }
+  @media screen and (max-width: $tablet) {
+    flex-direction: column;
+    justify-content: center;
 
-  @media screen and (min-width: $desktop) {
-    &--half {
-      width: 70%;
+    & .slider__content {
+      flex-grow: 1;
+      order: 1;
     }
   }
 
-  &--left img {
-    float: right;
+  @media screen and (min-width: $desktop) {
+    & .slider__content {
+      width: 70%;
+    }
   }
 }
 
-.slider__controls {
-  @include button-reset;
-  position: absolute;
-  top: 50%;
-  width: 4rem;
-  height: 4rem;
-  background-color: $white;
-  transform: translateY(-50%);
-  z-index: 2;
+.slider-half__info {
+  box-sizing: border-box;
 
-  & svg path {
-    fill: $dark-blue;
+  @media screen and(max-width: $tablet) {
+    padding: 3.5%;
+    padding-top: 5%;
   }
 
-  &--prev {
-    left: 0;
+  @media screen and(max-width: $tablet) and (min-width: $mobile - 1) {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
   }
 
-  &--next {
-    right: 0;
+  @media screen and(min-width: $desktop) {
+    align-self: center;
+    padding-left: 6.75rem;
+    padding-right: 2.5rem;
+    width: 30%;
+    min-width: 25rem;
   }
+}
+
+.slider-half__text {
+  @media screen and(max-width: $tablet) and (min-width: $mobile - 1) {
+    margin: 0;
+    width: 50%;
+  }
+}
+
+.slider__content {
+  position: relative;
+  overflow: hidden;
 }
 
 .slide {
@@ -188,10 +191,6 @@ input[type="radio"].visually-hidden {
     opacity: 1;
     transition: 0.5s;
     z-index: 2;
-  }
-
-  @media screen and(max-width: $tablet) {
-    top: 2rem;
   }
 }
 
@@ -234,18 +233,25 @@ input[type="radio"].visually-hidden {
   }
 }
 
-.slider__info {
-  box-sizing: border-box;
-  align-self: center;
+.slider__controls {
+  @include button-reset;
+  position: absolute;
+  top: 50%;
+  width: 4rem;
+  height: 4rem;
+  background-color: $white;
+  transform: translateY(-50%);
+  z-index: 2;
 
-  @media screen and(max-width: $tablet) and (min-width: $mobile - 1) {
-    display: flex;
+  & svg path {
+    fill: $dark-blue;
   }
 
-  @media screen and(min-width: $desktop) {
-    padding-left: 6.75rem;
-    padding-right: 2.5rem;
-    width: 30%;
-    min-width: 25rem;
+  &--prev {
+    left: 0;
+  }
+
+  &--next {
+    right: 0;
   }
 }

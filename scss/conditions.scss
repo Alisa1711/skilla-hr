@@ -9,8 +9,18 @@
 
   line-height: 1.6;
 
+  @media screen and(max-width: $mobile) {
+    &__right {
+      margin-top: 2rem;
+    }
+  }
+
   @media screen and(max-width: $tablet) {
     height: auto;
+
+    &__right {
+      margin-top: 3rem;
+    }
   }
 
   @media screen and(min-width: $desktop) {
@@ -31,7 +41,7 @@
   box-sizing: border-box;
   width: 88%;
 
-  @media screen and(min-width: $desktop) {
+  @media screen and(min-width: $tablet) {
     display: flex;
     padding: 9rem 0;
     padding-bottom: 13.5rem;
@@ -46,11 +56,15 @@
 
 .conditions__secondary-text {
   margin: 0;
-  margin-top: 4rem;
+  margin-top: 2rem;
   font-weight: 300;
 
   & span {
     font-weight: 500;
+  }
+
+  @media screen and(min-width: $tablet) {
+    margin-top: 4rem;
   }
 }
 

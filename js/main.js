@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  const sliders = $(`.slider__content`);
+  const sliders = $(`.slider`);
 
   sliders.each(function () {
     $(this).find(`.slide`).each(() => {
@@ -11,17 +11,17 @@ $(document).ready(function () {
 
   const getCurrentSlide = (target) => {
     const firstSlide = target.
-      closest(`.slider__content`).
+      closest(`.slider`).
       find(`.slide:first`).
       index();
     return target.
-      closest(`.slider__content`).
-      children(`.slide.active`).
+      closest(`.slider`).
+      find(`.slide.active`).
       index() - firstSlide;
   };
 
   const goToSlide = (target, slideNumber) => {
-    const slider = target.closest(`.slider__content`);
+    const slider = target.closest(`.slider`);
     const slides = slider.find(`.slide`);
     const dots = slider.find(`.slider__dot`);
     const currentSlide = (slideNumber + slides.length) % slides.length;
