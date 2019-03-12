@@ -1,9 +1,12 @@
 .header {
   display: flex;
   flex-direction: column;
-  padding-top: 2rem;
   color: $white;
   background-color: $dark-blue;
+  background-image: url("../img/bg-video.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .header__top {
@@ -42,11 +45,19 @@
 
 .header__main {
   @include outliner;
-  flex-grow: 2;
+  flex-grow: 0.3;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  margin: auto;
+
+  &-top,
+  &-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .header__big-logo {
@@ -69,5 +80,18 @@
   @media screen and(max-width: $mobile) {
     width: 90%;
     font-size: 1rem;
+  }
+}
+
+.header__play {
+  @include button-reset;
+
+  & svg {
+    width: auto;
+    height: 4.5rem;
+
+    @media screen and(max-width: $mobile) {
+      height: 3rem;
+    }
   }
 }
