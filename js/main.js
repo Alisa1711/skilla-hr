@@ -1,46 +1,67 @@
 $(document).ready(function () {
-  const sliders = $(`.slider`);
+  // slider
 
-  sliders.each(function () {
-    $(this).find(`.slide`).each(() => {
+  const slider = $(`.slider`);
+  const slide = $(`.slide`);
+  const next = $(`.slider__controls--next`);
+  const prev = $(`.slider__controls--prev`);
+
+  slider.each(function () {
+    $(this).find(slide).each(() => {
       $(this).
         find(`.slider__nav`).
         append(`<li class="slider__dot"></li>`);
     });
   });
 
+  const sliderDot = $(`.slider__dot`);
+
   const getCurrentSlide = (target) => {
     const firstSlide = target.
-      closest(`.slider`).
+      closest(slider).
       find(`.slide:first`).
       index();
     return target.
-      closest(`.slider`).
+      closest(slider).
       find(`.slide.active`).
       index() - firstSlide;
   };
 
   const goToSlide = (target, slideNumber) => {
-    const slider = target.closest(`.slider`);
-    const slides = slider.find(`.slide`);
-    const dots = slider.find(`.slider__dot`);
+    const slides = target.closest(slider).find(slide);
     const currentSlide = (slideNumber + slides.length) % slides.length;
 
-    slides.removeClass(`active`).eq(currentSlide).addClass(`active`);
-    dots.removeClass(`active`).eq(currentSlide).addClass(`active`);
+    slides.
+      removeClass(`active`).
+      eq(currentSlide).addClass(`active`);
+
+    target.closest(slider).find(sliderDot).
+      removeClass(`active`).
+      eq(currentSlide).addClass(`active`);
   };
 
   $(`.slider__nav .slider__dot:first-child`).addClass(`active`);
 
-  $(`.slider__dot`).on(`click`, function ({target}) {
+  sliderDot.on(`click`, function ({target}) {
     goToSlide($(this), $(target).index());
   });
-  $(`.slider__controls--next`).on(`click`, function () {
+  next.on(`click`, function () {
     const slideNumber = getCurrentSlide($(this)) + 1;
     goToSlide($(this), slideNumber);
   });
-  $(`.slider__controls--prev`).on(`click`, function () {
+  prev.on(`click`, function () {
     const slideNumber = getCurrentSlide($(this)) - 1;
     goToSlide($(this), slideNumber);
+  });
+
+  // swipe slider
+  slider.swipe({
+    swipeLeft() {
+      $(this).find(next).trigger(`click`);
+    },
+    swipeRight() {
+      $(this).find(prev).trigger(`click`);
+    },
+    triggerOnTouchEnd: false
   });
 });
