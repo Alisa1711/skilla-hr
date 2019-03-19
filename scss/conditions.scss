@@ -41,7 +41,7 @@
   box-sizing: border-box;
   width: 88%;
 
-  @media screen and(min-width: $tablet) {
+  @media screen and(min-width: $desktop) {
     display: flex;
     padding: 9rem 0;
     padding-bottom: 13.5rem;

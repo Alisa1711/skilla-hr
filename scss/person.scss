@@ -4,60 +4,34 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
+  background-image:
+    url("../img/team.svg"),
+    linear-gradient($yellow 0%, $dark-yellow 100%);
   background-repeat: no-repeat;
   background-size: 100% auto, auto;
   background-position: center;
-
-  & .heading-2 {
-    padding: 3.5%;
-  }
-
-  & .slider__content {
-    flex-grow: 1;
-  }
-
-  &--team {
-    background-image:
-      url("../img/team.svg"),
-      linear-gradient($yellow 0%, $dark-yellow 100%);
-  }
-
-  &--hr {
-    background-image:
-      url("../img/join.svg"),
-      linear-gradient($yellow 0%, $dark-yellow 100%);
-  }
-
-  &--leader {
-    background: linear-gradient(rgba($dark-blue, 0.1) 25%, rgba($dark-blue, 0.3) 100%);
-  }
 
   @media screen and(max-width: $mobile) {
     background-position: center 15%, center;
   }
 }
 
+.person__heading {
+  padding: 3.5%;
+}
+
+.person__slider {
+  flex-grow: 1;
+}
+
 .person__inner {
   @include outliner;
   box-sizing: border-box;
-  flex-grow: 1;
   display: flex;
-
-  &:not(.slide) {
-    position: relative;
-  }
+  flex-grow: 1;
 
   @media screen and(min-width: $mobile) {
     align-items: center;
-  }
-
-  @media screen and(max-width: $tablet) and(min-width: $mobile) {
-    padding-left: 3.5%;
-
-    .person--team & {
-      padding-left: 0;
-      padding-right: 3.5%;
-    }
   }
 
   @media screen and(min-width: $desktop) {
@@ -75,6 +49,13 @@
 
   @media screen and(min-width: $mobile) {
     min-width: 50%;
+  }
+
+  @media screen and(max-width: $mobile) {
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
   }
 }
 
@@ -95,8 +76,10 @@
   @include outliner;
 
   @media screen and(max-width: $mobile) {
-    padding-left: 3.5%;
-    width: 80%;
+    margin-top: auto;
+    padding: 1.5rem;
+    background-color: rgba($dark-blue, 0.4);
+    z-index: 2;
   }
 
   @media screen and(min-width: $mobile) {
@@ -131,22 +114,10 @@
   }
 }
 
-.person--dark-bottom {
-  .person__photo {
-    @media screen and(max-width: $mobile) {
-      position: absolute;
-      left: 50%;
-      width: 100%;
-      transform: translateX(-50%);
-    }
-  }
+.person--leader {
+  background: linear-gradient(rgba($dark-blue, 0.1) 25%, rgba($dark-blue, 0.3) 100%);
 
-  .person__info {
-    @media screen and(max-width: $mobile) {
-      margin-top: auto;
-      padding: 1.5rem 1.5rem;
-      background-color: rgba($dark-blue, 0.4);
-      z-index: 2;
-    }
+  & .person__inner {
+    position: relative;
   }
 }

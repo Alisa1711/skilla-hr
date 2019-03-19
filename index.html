@@ -58,12 +58,12 @@
     </div>
   </section>
 
-  <section class="office slider slider-half">
+  <section class="office slider-half">
     <div class="slider-half__info">
-      <p class="heading-2 slider-half__heading">Среда <span class="accent">&</span><br>культура</p>
+      <p class="slider-half__heading heading-2">Среда <span class="accent">&</span><br>культура</p>
       <p class="slider-half__text">Наша команда творит в&nbsp;БЦ&nbsp;&laquo;Кролл&raquo; в&nbsp;стильном и&nbsp;комфортном лофте в&nbsp;десяти минутах ходьбы от&nbsp;метро Ладожская</p>
     </div>
-    <div class="slider__content">
+    <div class="slider">
       <picture class="slide active">
         <source srcset="img/office/office-01__landscape_medium.jpg" media="(max-width: 1024px) and (orientation: landscape)">
         <source srcset="img/office/office-01__landscape_large_1x.jpg" media="(min-width: 1024px)">
@@ -84,9 +84,9 @@
     </div>
   </section>
 
-  <section class="person person--team person--dark-bottom slider">
-    <p class="heading-2 heading-2--light">Команда</p>
-    <div class="slider__content">
+  <section class="person">
+    <p class="person__heading heading-2 heading-2--light">Команда</p>
+    <div class="person__slider slider">
       <div class="person__inner slide active">
         <picture class="person__photo">
           <source srcset="img/team/team-01.png" media="(min-width: 768px)">
@@ -97,7 +97,7 @@
           <p class="person__headline">Никита<span class="person__subtitle">Ведущий интернет-маркетолог, 2&nbsp;года в&nbsp;Skilla</span></p>
         </div>
       </div>
-      <div class="person__inner slide active">
+      <div class="person__inner slide">
         <picture class="person__photo">
           <source srcset="img/team/team-01.png" media="(min-width: 768px)">
           <img class="person__img person__img--left" srcset="img/team/team-01_mobile.png" alt="Никита">
@@ -174,8 +174,8 @@
     </ul>
   </section>
 
-  <section class="person person--leader person--dark-bottom">
-    <p class="heading-2">Руководство</p>
+  <section class="person person--leader">
+    <p class="person__heading heading-2">Руководство</p>
     <div class="person__inner">
       <div class="person__info">
         <p class="quote--light quote">В&nbsp;Skilla работают замечательные люди и&nbsp;все такое прочее про рабочий процесс, интересные задачи и&nbsp;т.п.</p>
@@ -188,8 +188,8 @@
     </div>
   </section>
 
-  <section class="slider-half slider">
-    <div class="slider__content">
+  <section class="slider-half">
+    <div class="slider">
       <picture class="slide active">
         <source srcset="img/office/office-01__landscape_medium.jpg" media="(max-width: 1024px) and (orientation: landscape)">
         <source srcset="img/office/office-01__landscape_large_1x.jpg" media="(min-width: 1024px)">
@@ -209,30 +209,33 @@
       //= blocks/slider-arrows.html
     </div>
     <div class="slider-half__info">
-      <p class="heading-2">Атмосфера</p>
-      <p>У&nbsp;нас много активностей: вместе мы&nbsp;покоряем вершины, сплавляемся на&nbsp;байдарках и&nbsp;преодолеваем препятствия</p>
+      <p class="slider-half__heading heading-2">Атмосфера</p>
+      <p class="slider-half__text">У&nbsp;нас много активностей: вместе мы&nbsp;покоряем вершины, сплавляемся на&nbsp;байдарках и&nbsp;преодолеваем препятствия</p>
     </div>
   </section>
 
-  <section class="person person--hr">
-    <p class="heading-2 heading-2--light">Контакты</p>
-    <div class="person__inner">
-      <div class="person__info">
-        <p class="heading-2">Готов стать частью команды?</p>
-        <p class="quote">Меня зовут Таня. Я&nbsp;ищу сотрудников в&nbsp;Skilla и&nbsp;отвечаю на&nbsp;ваши письма и&nbsp;отклики. Задавайте вопросы, оставляйте отклики на&nbsp;вакансии или отправляйте резюме на&nbsp;будущее.</p>
-        <p class="person__headline">hello@skilla.ru<span class="person__subtitle"><a href="tel:+78125344567" class="contacts__phone">(812) 534-45-67</a> Санкт-Петербург, <nobr>пр. Энергетиков 10</nobr></span></p>
+  <section class="contacts">
+    <div class="contacts__inner">
+      <div class="contacts__info">
+        <p class="contacts__heading heading-2">Готов стать частью команды?</p>
+        <p class="contacts__quote quote">Меня зовут Таня. Я&nbsp;ищу сотрудников в&nbsp;Skilla и&nbsp;отвечаю на&nbsp;ваши письма и&nbsp;отклики. Задавайте вопросы, оставляйте отклики на&nbsp;вакансии или отправляйте резюме на&nbsp;будущее.</p>
+        <div class="contacts__data">
+          <a class="contacts__email" href="mailto:hello@skilla.ru">hello@skilla.ru</a>
+          <a class="contacts__phone" href="tel:+78125344567">(812) 534-45-67</a>
+          <span class="contacts__address"> Санкт-Петербург, <nobr>пр. Энергетиков 10</nobr></span>
+        </div>
       </div>
-      <picture class="person__photo">
+      <picture class="contacts__photo">
         <source srcset="img/hr.png" media="(min-width: 768px)">
-        <img class="person__img" srcset="img/hr_mobile.png" alt="Таня">
+        <img class="contacts__img" srcset="img/hr_mobile.png" alt="Таня">
       </picture>
     </div>
   </section>
 
   <section class="article screen">
-    <p class="heading-2 article__heading">Как работают в Skilla</p>
+    <p class="heading-2 article__heading">Как работают в&nbsp;Skilla</p>
     <div class="article__inner">
-      <p class="quote">Все сотрудники сидят в&nbsp;оупенспейсе. Исключения составляют лишь те&nbsp;отделы, которые работают с&nbsp;конфиденциальной информацией. Например, служба безопасности или HR-отдел...</p>
+      <p class="article__quote quote">Все сотрудники сидят в&nbsp;оупенспейсе. Исключения составляют лишь те&nbsp;отделы, которые работают с&nbsp;конфиденциальной информацией. Например, служба безопасности или HR-отдел...</p>
       <img class="article__logo-img" src="img/vedomosti-logo.svg" alt="Ведомости">
       <a href="" class="article__link">источник<svg class="article__link-arrow" width="17" height="16" viewBox="0 0 17 16"><path d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9L16 9V7L0 7L0 9Z"/></svg></a>
     </div>

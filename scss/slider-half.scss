@@ -1,0 +1,76 @@
+.slider-half {
+  @include outliner;
+  position: relative;
+  display: flex;
+  height: 100vh;
+
+  & img {
+    width: auto;
+    height: 100%;
+  }
+
+  @media screen and(max-width: $mobile) {
+    .slide {
+      flex-grow: 1;
+      display: flex;
+      align-items: flex-end;
+    }
+
+    & img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  @media screen and (max-width: $tablet) {
+    flex-direction: column;
+    justify-content: center;
+
+    & .slider {
+      flex-grow: 1;
+      order: 1;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    & .slider {
+      width: 70%;
+    }
+  }
+}
+
+.slider-half__info {
+  box-sizing: border-box;
+
+  @media screen and(max-width: $tablet) {
+    padding: 3.5%;
+    padding-top: 5%;
+  }
+
+  @media screen and(max-width: $tablet) and (min-width: $mobile - 1) {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+
+  @media screen and(min-width: $desktop) {
+    align-self: center;
+    padding-left: 6.75rem;
+    padding-right: 2.5rem;
+    width: 30%;
+    min-width: 25rem;
+  }
+}
+
+.slider-half__heading {
+  @media screen and(max-width: $mobile) {
+    padding-top: 3rem;
+  }
+}
+
+.slider-half__text {
+  @media screen and(max-width: $tablet) and (min-width: $mobile - 1) {
+    margin: 0;
+    width: 50%;
+  }
+}
