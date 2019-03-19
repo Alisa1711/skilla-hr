@@ -1,6 +1,14 @@
 $(document).ready(function () {
-  // slider
+  // header
+  $(window).on(`scroll`, function () {
+    if ($(this).scrollTop() > 10) {
+      $(`.header__top`).addClass(`header__top--fixed`);
+    } else {
+      $(`.header__top`).removeClass(`header__top--fixed`);
+    }
+  });
 
+  // slider
   const slider = $(`.slider`);
   const slide = $(`.slide`);
   const next = $(`.slider__controls--next`);
