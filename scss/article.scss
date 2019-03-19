@@ -7,18 +7,40 @@
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: bottom;
+
+  @media screen and(max-width: $mobile) {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .article__heading {
-  width: 50%;
+  @media screen and(max-width: $mobile) {
+    margin-bottom: 3rem;
+  }
+
+  @media screen and(min-width: $tablet) {
+    width: 50%;
+  }
 }
 
 .article__inner {
+  position: relative;
   align-self: center;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  max-width: 34rem;
+  z-index: 1;
+
+  @media screen and(min-width: $mobile) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    max-width: 44rem;
+  }
+}
+
+.article__quote {
+  @media screen and(min-width: $mobile) {
+    margin-left: -$quote-padding-left;
+  }
 }
 
 .article__logo-img {
@@ -45,12 +67,23 @@
 
 .article__bg {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 50%;
-  bottom: 0;
   background-image: url("../img/article-bg-letters.svg");
   background-repeat: no-repeat;
-  background-size: 50%;
   background-position: center;
+
+  @media screen and(max-width: $mobile) {
+    top: 50%;
+    left: 0;
+    right: 50%;
+    bottom: 0;
+    background-size: 100%;
+  }
+
+  @media screen and(min-width: $mobile) {
+    top: 0;
+    left: 0;
+    right: 50%;
+    bottom: 0;
+    background-size: 50%;
+  }
 }
