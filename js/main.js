@@ -30,6 +30,16 @@ $(document).ready(function () {
     });
   });
 
+  // play button
+  $(`.header__play`).on(`click`, () => {
+    $(`#main-video`).show(`fast`);
+  });
+
+  $(`.modal__inner`).on(`click`, () => {
+    $(`#main-video`).hide(`fast`);
+    $(`.modal__video`).stop();
+  });
+
   // scroll
   let anchors = [];
   let currentAnchor = 0;

@@ -7,6 +7,7 @@
   <title>Работа в Skilla</title>
   <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="shortcut icon" href="img/fav.ico" type="image/x-icon">
 </head>
 <body>
   <header class="header anchor">
@@ -71,6 +72,10 @@
         <source srcset="img/office/office-02.jpg" media="(min-width: 1024px)">
         <img srcset="img/office/office-02__small.jpg" alt="Описание фотографии">
       </picture>
+      <picture class="slide">
+        <source srcset="img/office/office-03.jpg" media="(min-width: 1024px)">
+        <img srcset="img/office/office-03__small.jpg" alt="Описание фотографии">
+      </picture>
       <ul class="slider__nav"></ul>
       //= blocks/slider-arrows.html
     </div>
@@ -91,8 +96,18 @@
       </div>
       <div class="person__inner slide">
         <picture class="person__photo">
-          <source srcset="img/team/team-01.png" media="(min-width: 768px)">
-          <img class="person__img person__img--left" srcset="img/team/team-01_mobile.png" alt="Никита">
+          <source srcset="img/team/team-02.png" media="(min-width: 768px)">
+          <img class="person__img person__img--left" srcset="img/team/team-02_mobile.png" alt="Никита">
+        </picture>
+        <div class="person__info">
+          <p class="quote--light quote">В&nbsp;Skilla работают замечательные люди и&nbsp;все такое прочее про рабочий процесс, интересные задачи и&nbsp;т.п.</p>
+          <p class="person__headline">Никита<span class="person__subtitle">Ведущий интернет-маркетолог, 2&nbsp;года в&nbsp;Skilla</span></p>
+        </div>
+      </div>
+      <div class="person__inner slide">
+        <picture class="person__photo">
+          <source srcset="img/team/team-03.png" media="(min-width: 768px)">
+          <img class="person__img person__img--left" srcset="img/team/team-03_mobile.png" alt="Никита">
         </picture>
         <div class="person__info">
           <p class="quote--light quote">В&nbsp;Skilla работают замечательные люди и&nbsp;все такое прочее про рабочий процесс, интересные задачи и&nbsp;т.п.</p>
@@ -141,8 +156,8 @@
         <p class="person__headline">Кирилл Упоров<span class="person__subtitle">Владелец компании</span></p>
       </div>
       <picture class="person__photo">
-        <source srcset="img/team/team-01.png" media="(min-width: 768px)">
-        <img class="person__img" srcset="img/team/team-01_mobile.png" alt="Никита">
+        <source srcset="img/leader.png" media="(min-width: 768px)">
+        <img class="person__img" srcset="img/leader__small.png" alt="Никита">
       </picture>
     </div>
   </section>
@@ -156,6 +171,10 @@
       <picture class="slide">
         <source srcset="img/atmosphere/atm-02.jpg" media="(min-width: 1024px)">
         <img srcset="img/atmosphere/atm-02__small.jpg" alt="Описание фотографии">
+      </picture>
+      <picture class="slide">
+        <source srcset="img/atmosphere/atm-03.jpg" media="(min-width: 1024px)">
+        <img srcset="img/atmosphere/atm-03__small.jpg" alt="Описание фотографии">
       </picture>
       <ul class="slider__nav"></ul>
       //= blocks/slider-arrows.html
@@ -188,8 +207,8 @@
     <p class="heading-2">Как работают в&nbsp;Skilla</p>
     <div class="article__inner">
       <div class="article__content">
-        <p class="article__quote quote">Все сотрудники сидят в&nbsp;оупенспейсе. Исключения составляют лишь те&nbsp;отделы, которые работают с&nbsp;конфиденциальной информацией. Например, служба безопасности или HR-отдел...</p>
-        <img class="article__logo-img" src="img/vedomosti-logo.svg" alt="Ведомости">
+        <p class="article__quote quote">В&nbsp;Петербурге открылся новый офис онлайн бизнес-школы Skilla. Большая часть сотрудников в&nbsp;нем&nbsp;&mdash; это создатели обучающих курсов и&nbsp;разработчики платформы. Здесь ежедневно обрабатывают, исследуют и&nbsp;тестируют терабайты информации. Редакция &laquo;Аргументы и&nbsp;Факты&raquo;...</p>
+        <img class="article__logo-img" src="img/argumenty_i_facty.svg" alt="Аргументы и факты">
         <a href="" class="article__link">источник<svg class="article__link-arrow" width="17" height="16" viewBox="0 0 17 16"><path d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9L16 9V7L0 7L0 9Z"/></svg></a>
       </div>
     </div>
@@ -203,6 +222,13 @@
     </div>
     <div class="footer__copyright">© Skilla. 2019</div>
   </footer>
+
+  <!-- <div class="modal" id="main-video">
+    <div class="modal__inner">
+      <span class="modal__close"></span>
+      <iframe></iframe>
+    </div>
+  </div> -->
 
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery.touchSwipe.min.js"></script>

@@ -9,6 +9,10 @@
   background-image: url("../img/footer-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media screen and(max-width: $mobile) {
+    background-image: url("../img/footer-bg__small.jpg");
+  }
 }
 
 .footer__inner {

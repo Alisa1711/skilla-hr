@@ -9,6 +9,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  @media screen and(max-width: $mobile) {
+    background-image: url("../img/bg-video__small.jpg")
+  }
 }
 
 .header__top {
