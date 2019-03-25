@@ -3,7 +3,8 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
+  min-height: 600px;
   background-image:
     url("../img/team.svg"),
     linear-gradient($yellow 0%, $dark-yellow 100%);
@@ -17,7 +18,14 @@
 }
 
 .person__heading {
-  padding: 3.5%;
+  padding-top: 6rem;
+  padding-left: 3.5%;
+  padding-right: 3.5%;
+  padding-bottom: 0;
+
+  @media screen and(max-width: $mobile) {
+    padding-top: 2rem;
+  }
 }
 
 .person__slider {
@@ -25,12 +33,12 @@
 }
 
 .person__inner {
-  @include outliner;
   box-sizing: border-box;
   display: flex;
   flex-grow: 1;
 
   @media screen and(min-width: $mobile) {
+    padding-right: 3.5%;
     align-items: center;
   }
 
@@ -42,7 +50,6 @@
 }
 
 .person__photo {
-  @include outliner;
   box-sizing: border-box;
   height: 100%;
   overflow: hidden;
@@ -73,8 +80,6 @@
 }
 
 .person__info {
-  @include outliner;
-
   @media screen and(max-width: $mobile) {
     margin-top: auto;
     padding: 1.5rem;
@@ -115,9 +120,19 @@
 }
 
 .person--leader {
+  padding-right: 0;
   background: linear-gradient(rgba($dark-blue, 0.1) 25%, rgba($dark-blue, 0.3) 100%);
 
+  @media screen and(min-width: $mobile) {
+    padding-left: 3.5%;
+
+    & .person__heading {
+      padding-left: 0;
+    }
+  }
+
   & .person__inner {
+    padding: 0;
     position: relative;
   }
 }

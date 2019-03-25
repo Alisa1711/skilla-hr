@@ -1,7 +1,9 @@
 .article {
+  @include screen;
   position: relative;
   display: flex;
-  padding-bottom: 6rem;
+  flex-direction: column;
+  padding-top: 6rem;
   background-color: rgba($dark-blue, 0.1);
   background-image: url("../img/article-bg.svg");
   background-repeat: no-repeat;
@@ -9,30 +11,44 @@
   background-position: bottom;
 
   @media screen and(max-width: $mobile) {
+    padding-top: 2rem;
     flex-direction: column;
     justify-content: center;
   }
-}
 
-.article__heading {
-  @media screen and(max-width: $mobile) {
-    margin-bottom: 3rem;
-  }
-
-  @media screen and(min-width: $tablet) {
-    width: 50%;
+  @media screen and(max-width: $tablet - 1) {
+    background-image: url("../img/article-bg.svg"),
+      url("../img/article-bg-letters__tablet.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom, center 160px;
   }
 }
 
 .article__inner {
   position: relative;
-  align-self: center;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
   z-index: 1;
 
+  @media screen and(min-width: $tablet) {
+    padding-left: 30%;
+    background-image: url("../img/article-bg-letters.svg");
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    background-size: 40% auto;
+  }
+
+  @media screen and(min-width: $desktop) {
+    padding-left: 50%;
+  }
+}
+
+.article__content {
   @media screen and(min-width: $mobile) {
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
     max-width: 44rem;
   }
 }
@@ -55,6 +71,12 @@
   font-weight: 500;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  transition: all 0.5s;
+
+  &:hover {
+    opacity: 0.5;
+    transition: all 0.5s;
+  }
 
   &-arrow {
     margin-left: 1rem;

@@ -19,7 +19,14 @@
   padding-top: 3.5%;
   padding-left: 3.5%;
   padding-right: 3.5%;
-  height: 100vh;
+
+  @media screen and(max-width: $mobile) and(min-height: 400px) {
+    height: 100%;
+  }
+
+  @media screen and(min-width: $mobile) and(min-height: 600px) {
+    height: 100%;
+  }
 }
 
 // @mixin

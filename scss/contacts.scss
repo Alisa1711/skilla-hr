@@ -1,4 +1,8 @@
 .contacts {
+  @include screen;
+  padding: 0;
+  padding-left: 3.5%;
+  min-height: 600px;
   background:
     url("../img/join.svg") no-repeat,
     linear-gradient($yellow 0%, $dark-yellow 100%);
@@ -12,7 +16,7 @@
 
 .contacts__inner {
   display: flex;
-  height: 100vh;
+  height: 100%;
 
   @media screen and(min-width: $desktop) {
     margin-left: auto;
@@ -52,6 +56,10 @@
     padding-left: 1.5rem;
     font-size: 1rem;
   }
+
+  @media screen and(min-width: $mobile) and(max-height: 800px) {
+    font-size: 1.5rem;
+  }
 }
 
 .contacts__data {
@@ -72,6 +80,12 @@
   font-size: 3rem;
   font-weight: 700;
   color: $white;
+  transition: all 0.5s;
+
+  &:hover {
+    color: $dark-blue;
+    transition: all 0.5s;
+  }
 
   @media screen and(max-width: $mobile) {
     font-size: 1.5rem;

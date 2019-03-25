@@ -1,5 +1,15 @@
 .office {
-  @media screen and(min-width: $desktop) {
-    margin-top: -13.5rem;
+  @media screen and(min-width: $desktop) and(min-height: 400px) {
+    margin-top: -8rem;
+  }
+
+  @media screen and(max-width: $tablet) {
+    .slider-half__info {
+      order: 2;
+    }
+
+    .slider-half__heading {
+      padding-top: 1rem;
+    }
   }
 }
