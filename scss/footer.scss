@@ -1,9 +1,10 @@
 .footer {
+  @include screen;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 6rem + 3rem; // для копирайтов
+  padding-bottom: 3rem; // для копирайтов
   color: $white;
   background-image: url("../img/footer-bg.jpg");
   background-repeat: no-repeat;
@@ -24,12 +25,20 @@
   font-size: 6rem;
   font-weight: 700;
   line-height: 1;
+
+  @media screen and(max-width: $mobile) {
+    font-size: 4rem;
+  }
 }
 
 .footer__logo {
   margin-top: 1rem;
   width: auto;
   height: 6rem;
+
+  @media screen and(max-width: $mobile) {
+    height: 4rem;
+  }
 }
 
 .footer__link {
@@ -40,6 +49,13 @@
   font-weight: 500;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  white-space: nowrap;
+  transition: all 0.5s;
+
+  &:hover {
+    opacity: 0.5;
+    transition: all 0.5s;
+  }
 
   &-arrow {
     margin-left: 1rem;
@@ -47,6 +63,10 @@
     & path {
       fill: $yellow;
     }
+  }
+
+  @media screen and(max-width: $mobile) {
+    font-size: 0.8rem;
   }
 }
 

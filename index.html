@@ -9,37 +9,36 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <header class="header">
+  <header class="header anchor">
       <div class="header__top">
         <a href="javascript:void(0);" class="header__logo">
           <img class="header__logo-img" src="img/logo.svg" alt="На сайт Skilla">
         </a>
         <nav class="header__nav">
-          <a href="javascript:void(0);" class="header__nav-link">условия</a>
-          <a href="javascript:void(0);" class="header__nav-link">офис</a>
-          <a href="javascript:void(0);" class="header__nav-link">команда</a>
-          <a href="javascript:void(0);" class="header__nav-link">бонусы</a>
-          <a href="javascript:void(0);" class="header__nav-link">руководство</a>
-          <a href="javascript:void(0);" class="header__nav-link">контакты</a>
+          <span class="header__close"></span>
+          <div class="header__nav-inner">
+            <a href="#conditions" class="header__nav-link">условия</a>
+            <a href="#office" class="header__nav-link">офис</a>
+            <a href="#team" class="header__nav-link">команда</a>
+            <a href="#benefits" class="header__nav-link">бонусы</a>
+            <a href="#leader" class="header__nav-link">руководство</a>
+            <a href="#contacts" class="header__nav-link">контакты</a>
+          </div>
         </nav>
         <button class="header__burger">
           <svg width="32" height="25" viewBox="0 0 32 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H32V3H0V0ZM0 11H32V14H0V11ZM32 22H0V25H32V22Z" fill="white"/></svg>
         </button>
-        <a href="javascript:void(0);" class="header__instagram"><span class="visually-hidden">Instagramm</span><svg width="32" height="32"><path d="M16 2.884C20.272 2.884 20.7787 2.9 22.4667 2.97733C26.8027 3.17467 28.828 5.232 29.0253 9.536C29.1027 11.2227 29.1173 11.7293 29.1173 16.0013C29.1173 20.2747 29.1013 20.78 29.0253 22.4667C28.8267 26.7667 26.8067 28.828 22.4667 29.0253C20.7787 29.1027 20.2747 29.1187 16 29.1187C11.728 29.1187 11.2213 29.1027 9.53467 29.0253C5.188 28.8267 3.17333 26.76 2.976 22.4653C2.89867 20.7787 2.88267 20.2733 2.88267 16C2.88267 11.728 2.9 11.2227 2.976 9.53467C3.17467 5.232 5.19467 3.17333 9.53467 2.976C11.2227 2.9 11.728 2.884 16 2.884ZM16 0C11.6547 0 11.1107 0.0186667 9.404 0.096C3.59333 0.362667 0.364 3.58667 0.0973333 9.40267C0.0186667 11.1107 0 11.6547 0 16C0 20.3453 0.0186667 20.8907 0.096 22.5973C0.362667 28.408 3.58667 31.6373 9.40267 31.904C11.1107 31.9813 11.6547 32 16 32C20.3453 32 20.8907 31.9813 22.5973 31.904C28.4027 31.6373 31.64 28.4133 31.9027 22.5973C31.9813 20.8907 32 20.3453 32 16C32 11.6547 31.9813 11.1107 31.904 9.404C31.6427 3.59867 28.4147 0.364 22.5987 0.0973333C20.8907 0.0186667 20.3453 0 16 0V0ZM16 7.784C11.4627 7.784 7.784 11.4627 7.784 16C7.784 20.5373 11.4627 24.2173 16 24.2173C20.5373 24.2173 24.216 20.5387 24.216 16C24.216 11.4627 20.5373 7.784 16 7.784ZM16 21.3333C13.0547 21.3333 10.6667 18.9467 10.6667 16C10.6667 13.0547 13.0547 10.6667 16 10.6667C18.9453 10.6667 21.3333 13.0547 21.3333 16C21.3333 18.9467 18.9453 21.3333 16 21.3333ZM24.5413 5.54C23.48 5.54 22.62 6.4 22.62 7.46C22.62 8.52 23.48 9.38 24.5413 9.38C25.6013 9.38 26.46 8.52 26.46 7.46C26.46 6.4 25.6013 5.54 24.5413 5.54Z" fill="white"/></svg></a>
+        <a href="javascript:void(0);" class="header__instagram"><span class="visually-hidden">Instagramm</span></a>
       </div>
       <div class="header__main">
-        <div class="header__main-top">
-          <img src="img/logo-full.svg" alt="Skilla" class="header__big-logo">
-          <h1 class="header__heading"><span class="visually-hidden">Skilla</span>Мы делаем <nobr>бизнес-образование</nobr> доступным для каждого</h1>
-        </div>
-        <div class="header__main-bottom">
-          <button class="header__play"><span class="visually-hidden">Смотреть видео</span><svg width="105" height="75" viewBox="0 0 105 75"><path fill-rule="evenodd" clip-rule="evenodd" d="M85.5 8.25C78 7.5 66 7.5 52.5 7.5C39 7.5 27 7.5 19.5 8.25C19.422 8.2565 19.3444 8.26295 19.2672 8.26936C10.4482 9.00214 7.5 9.24711 7.5 37.5C7.5 65.7529 10.4482 65.9979 19.2672 66.7306C19.3444 66.7371 19.422 66.7435 19.5 66.75C27 67.5 39 67.5 52.5 67.5C66 67.5 78 67.5 85.5 66.75C85.578 66.7435 85.6556 66.7371 85.7327 66.7306C94.5518 65.9979 97.5 65.7529 97.5 37.5C97.5 9.24711 94.5518 9.00214 85.7327 8.26936C85.6556 8.26295 85.578 8.2565 85.5 8.25ZM19.5 0.75C27 0 39.75 0 52.5 0C65.25 0 78 0 85.5 0.75C102.75 2.25 105 10.5 105 37.5C105 64.5 102.75 72.75 85.5 74.25C78 75 65.25 75 52.5 75C39.75 75 27 75 19.5 74.25C2.25 72.75 0 64.5 0 37.5C0 10.5 2.25 2.25 19.5 0.75ZM74 37L37 20V54L74 37Z" fill="#FFDE00"/></svg></button>
-          <span class="header__descr">Cмотри, как все устроено</span>
-        </div>
+        <img src="img/logo-full.svg" alt="Skilla" class="header__big-logo">
+        <h1 class="header__heading"><span class="visually-hidden">Skilla</span>Мы делаем <nobr>бизнес-образование</nobr> доступным для каждого</h1>
+        <svg class="header__play" width="105" height="75" viewBox="0 0 105 75"><path fill-rule="evenodd" clip-rule="evenodd" d="M85.5 8.25C78 7.5 66 7.5 52.5 7.5C39 7.5 27 7.5 19.5 8.25C19.422 8.2565 19.3444 8.26295 19.2672 8.26936C10.4482 9.00214 7.5 9.24711 7.5 37.5C7.5 65.7529 10.4482 65.9979 19.2672 66.7306C19.3444 66.7371 19.422 66.7435 19.5 66.75C27 67.5 39 67.5 52.5 67.5C66 67.5 78 67.5 85.5 66.75C85.578 66.7435 85.6556 66.7371 85.7327 66.7306C94.5518 65.9979 97.5 65.7529 97.5 37.5C97.5 9.24711 94.5518 9.00214 85.7327 8.26936C85.6556 8.26295 85.578 8.2565 85.5 8.25ZM19.5 0.75C27 0 39.75 0 52.5 0C65.25 0 78 0 85.5 0.75C102.75 2.25 105 10.5 105 37.5C105 64.5 102.75 72.75 85.5 74.25C78 75 65.25 75 52.5 75C39.75 75 27 75 19.5 74.25C2.25 72.75 0 64.5 0 37.5C0 10.5 2.25 2.25 19.5 0.75ZM74 37L37 20V54L74 37Z" fill="#FFDE00"/></svg>
+        <span class="header__descr">Cмотри, как все устроено</span>
       </div>
   </header>
 
-  <section class="conditions screen">
+  <section class="conditions anchor" id="conditions">
     <div class="conditions__inner">
       <div class="conditions__left">
         <p class="conditions__primary-text">Мы&nbsp;обучаем предпринимателей и&nbsp;даем им&nbsp;мощный инструмент для развития бизнеса</p>
@@ -58,33 +57,26 @@
     </div>
   </section>
 
-  <section class="office slider-half">
+  <section class="office slider-half anchor" id="office">
     <div class="slider-half__info">
       <p class="slider-half__heading heading-2">Среда <span class="accent">&</span><br>культура</p>
       <p class="slider-half__text">Наша команда творит в&nbsp;БЦ&nbsp;&laquo;Кролл&raquo; в&nbsp;стильном и&nbsp;комфортном лофте в&nbsp;десяти минутах ходьбы от&nbsp;метро Ладожская</p>
     </div>
     <div class="slider">
       <picture class="slide active">
-        <source srcset="img/office/office-01__landscape_medium.jpg" media="(max-width: 1024px) and (orientation: landscape)">
-        <source srcset="img/office/office-01__landscape_large_1x.jpg" media="(min-width: 1024px)">
-        <img srcset="img/office/office-01__landscape_768.jpg" alt="Описание фотографии">
+        <source srcset="img/office/office-01.jpg" media="(min-width: 1024px)">
+        <img srcset="img/office/office-01__small.jpg" alt="Описание фотографии">
       </picture>
       <picture class="slide">
-        <source srcset="img/office/office-01__landscape_medium.jpg" media="(max-width: 1024px) and (orientation: landscape)">
-        <source srcset="img/office/office-01__landscape_768_mirror.jpg" media="(min-width: 1024px)">
-        <img srcset="img/office/office-01__landscape_768_mirror.jpg" alt="Описание фотографии">
-      </picture>
-      <picture class="slide">
-        <source srcset="img/office/office-01__landscape_medium.jpg" media="(max-width: 1024px) and (orientation: landscape)">
-        <source srcset="img/office/office-01__landscape_large_1x.jpg" media="(min-width: 1024px)">
-        <img srcset="img/office/office-01__landscape_768.jpg" alt="Описание фотографии">
+        <source srcset="img/office/office-02.jpg" media="(min-width: 1024px)">
+        <img srcset="img/office/office-02__small.jpg" alt="Описание фотографии">
       </picture>
       <ul class="slider__nav"></ul>
       //= blocks/slider-arrows.html
     </div>
   </section>
 
-  <section class="person">
+  <section class="person anchor" id="team">
     <p class="person__heading heading-2 heading-2--light">Команда</p>
     <div class="person__slider slider">
       <div class="person__inner slide active">
@@ -112,69 +104,36 @@
     </div>
   </section>
 
-  <section class="benefits screen">
-    <p class="heading-2">У нас хорошо</p>
+  <section class="benefits anchor" id="benefits">
     <ul class="benefits__list">
       <li class="benefits__item">
-        <span class="benefits__title">уютный<br>open space</span>
-        <div class="benefits__descr">
-          <p class="benefits__descr-title">Уютный open-space</p>
-          <span>В офисе мы общаемся, креативим и веселимся. У нас нет места высоким перегородкам</span>
-        </div>
+        <span class="benefits__title benefits__title--01">уютный<br>open space</span>
       </li>
       <li class="benefits__item">
-        <span class="benefits__title">дружелюбная<br>атомсфера</span>
-        <div class="benefits__descr">
-          <p class="benefits__descr-title">Уютный open-space</p>
-          <span>В офисе мы общаемся, креативим и веселимся. У нас нет места высоким перегородкам</span>
-        </div>
+        <span class="benefits__title benefits__title--02">дружелюбная<br>атомсфера</span>
       </li>
       <li class="benefits__item">
-        <span class="benefits__title">современные<br>технологии</span>
-        <div class="benefits__descr">
-          <p class="benefits__descr-title">Уютный open-space</p>
-          <span>В офисе мы общаемся, креативим и веселимся. У нас нет места высоким перегородкам</span>
-        </div>
+        <span class="benefits__title benefits__title--03">современные<br>технологии</span>
       </li>
       <li class="benefits__item">
-        <span class="benefits__title">карьерный<br>рост</span>
-        <div class="benefits__descr">
-          <p class="benefits__descr-title">Уютный open-space</p>
-          <span>В офисе мы общаемся, креативим и веселимся. У нас нет места высоким перегородкам</span>
-        </div>
+        <span class="benefits__title benefits__title--04">карьерный<br>рост</span>
       </li>
       <li class="benefits__item">
-        <span class="benefits__title">вкусные чай<br>и кофе</span>
-        <div class="benefits__descr">
-          <p class="benefits__descr-title">Уютный open-space</p>
-          <span>В офисе мы общаемся, креативим и веселимся. У нас нет места высоким перегородкам</span>
-        </div>
+        <span class="benefits__title benefits__title--05">вкусные чай<br>и кофе</span>
       </li>
       <li class="benefits__item">
-        <span class="benefits__title">плавающий<br>график</span>
-        <div class="benefits__descr">
-          <p class="benefits__descr-title">Уютный open-space</p>
-          <span>В офисе мы общаемся, креативим и веселимся. У нас нет места высоким перегородкам</span>
-        </div>
+        <span class="benefits__title benefits__title--06">плавающий<br>график</span>
       </li>
       <li class="benefits__item">
-        <span class="benefits__title">совместный<br>отдых на природе</span>
-        <div class="benefits__descr">
-          <p class="benefits__descr-title">Уютный open-space</p>
-          <span>В офисе мы общаемся, креативим и веселимся. У нас нет места высоким перегородкам</span>
-        </div>
+        <span class="benefits__title benefits__title--07">совместный<br>отдых на природе</span>
       </li>
       <li class="benefits__item">
-        <span class="benefits__title">отличное кафе<br>внизу</span>
-        <div class="benefits__descr">
-          <p class="benefits__descr-title">Уютный open-space</p>
-          <span>В офисе мы общаемся, креативим и веселимся. У нас нет места высоким перегородкам</span>
-        </div>
+        <span class="benefits__title benefits__title--08">отличное кафе<br>внизу</span>
       </li>
     </ul>
   </section>
 
-  <section class="person person--leader">
+  <section class="person person--leader anchor" id="leader">
     <p class="person__heading heading-2">Руководство</p>
     <div class="person__inner">
       <div class="person__info">
@@ -188,22 +147,15 @@
     </div>
   </section>
 
-  <section class="slider-half">
+  <section class="slider-half anchor">
     <div class="slider">
       <picture class="slide active">
-        <source srcset="img/office/office-01__landscape_medium.jpg" media="(max-width: 1024px) and (orientation: landscape)">
-        <source srcset="img/office/office-01__landscape_large_1x.jpg" media="(min-width: 1024px)">
-        <img srcset="img/office/office-01__landscape_768.jpg" alt="Описание фотографии">
+        <source srcset="img/atmosphere/atm-01.jpg" media="(min-width: 1024px)">
+        <img srcset="img/atmosphere/atm-01__small.jpg" alt="Описание фотографии">
       </picture>
       <picture class="slide">
-        <source srcset="img/office/office-01__landscape_medium.jpg" media="(max-width: 1024px) and (orientation: landscape)">
-        <source srcset="img/office/office-01__landscape_768_mirror.jpg" media="(min-width: 1024px)">
-        <img srcset="img/office/office-01__landscape_768_mirror.jpg" alt="Описание фотографии">
-      </picture>
-      <picture class="slide">
-        <source srcset="img/office/office-01__landscape_medium.jpg" media="(max-width: 1024px) and (orientation: landscape)">
-        <source srcset="img/office/office-01__landscape_large_1x.jpg" media="(min-width: 1024px)">
-        <img srcset="img/office/office-01__landscape_768.jpg" alt="Описание фотографии">
+        <source srcset="img/atmosphere/atm-02.jpg" media="(min-width: 1024px)">
+        <img srcset="img/atmosphere/atm-02__small.jpg" alt="Описание фотографии">
       </picture>
       <ul class="slider__nav"></ul>
       //= blocks/slider-arrows.html
@@ -214,7 +166,7 @@
     </div>
   </section>
 
-  <section class="contacts">
+  <section class="contacts anchor" id="contacts">
     <div class="contacts__inner">
       <div class="contacts__info">
         <p class="contacts__heading heading-2">Готов стать частью команды?</p>
@@ -232,17 +184,18 @@
     </div>
   </section>
 
-  <section class="article screen">
-    <p class="heading-2 article__heading">Как работают в&nbsp;Skilla</p>
+  <section class="article anchor">
+    <p class="heading-2">Как работают в&nbsp;Skilla</p>
     <div class="article__inner">
-      <p class="article__quote quote">Все сотрудники сидят в&nbsp;оупенспейсе. Исключения составляют лишь те&nbsp;отделы, которые работают с&nbsp;конфиденциальной информацией. Например, служба безопасности или HR-отдел...</p>
-      <img class="article__logo-img" src="img/vedomosti-logo.svg" alt="Ведомости">
-      <a href="" class="article__link">источник<svg class="article__link-arrow" width="17" height="16" viewBox="0 0 17 16"><path d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9L16 9V7L0 7L0 9Z"/></svg></a>
+      <div class="article__content">
+        <p class="article__quote quote">Все сотрудники сидят в&nbsp;оупенспейсе. Исключения составляют лишь те&nbsp;отделы, которые работают с&nbsp;конфиденциальной информацией. Например, служба безопасности или HR-отдел...</p>
+        <img class="article__logo-img" src="img/vedomosti-logo.svg" alt="Ведомости">
+        <a href="" class="article__link">источник<svg class="article__link-arrow" width="17" height="16" viewBox="0 0 17 16"><path d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9L16 9V7L0 7L0 9Z"/></svg></a>
+      </div>
     </div>
-    <div class="article__bg"></div>
   </section>
 
-  <footer class="footer screen">
+  <footer class="footer anchor">
     <div class="footer__inner">
       <p class="footer__slogan">Вместе<br>мы — <span class="visually-hidden">Skilla</span></p>
       <img src="img/logo-full.svg" alt="Skilla" class="footer__logo">

@@ -1,11 +1,16 @@
 .benefits {
+  padding-top: 4rem;
   padding-bottom: 6rem;
   display: flex;
   flex-direction: column;
 
+  @media screen and(max-width: $mobile) {
+    padding-top: 2rem;
+    height: auto;
+  }
+
   @media screen and(max-width: $tablet) {
     padding-bottom: 3rem;
-    height: auto;
   }
 }
 
@@ -22,15 +27,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
   min-width: 25%;
   text-align: center;
-
-  &:hover {
-    & .benefits__descr {
-      opacity: 1;
-      transition: 0.5s;
-    }
-  }
 
   @media screen and(max-width: $mobile) {
     min-width: 50%;
@@ -53,7 +53,41 @@
     margin-bottom: 2rem;
     width: 4.5rem;
     height: 4.5rem;
-    background-color: $yellow;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  &--01::before {
+    background-image: url("../img/benefit-01.svg");
+  }
+
+  &--02::before {
+    background-image: url("../img/benefit-02.svg");
+  }
+
+  &--03::before {
+    background-image: url("../img/benefit-03.svg");
+  }
+
+  &--04::before {
+    background-image: url("../img/benefit-04.svg");
+  }
+
+  &--05::before {
+    background-image: url("../img/benefit-05.svg");
+  }
+
+  &--06::before {
+    background-image: url("../img/benefit-06.svg");
+  }
+
+  &--07::before {
+    background-image: url("../img/benefit-07.svg");
+  }
+
+  &--08::before {
+    background-image: url("../img/benefit-08.svg");
   }
 
   @media screen and(max-width: $mobile) {
@@ -64,27 +98,4 @@
       margin-bottom: 1rem;
     }
   }
-}
-
-.benefits__descr {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 2.5rem;
-  border: 1px solid rgba($dark-blue, 0.1);
-  background-color: rgba($white, 0.8);
-  opacity: 0;
-  transition: 0.5s;
-}
-
-.benefits__descr-title {
-  margin: 0;
-  margin-bottom: 1rem;
-  font-weight: 500;
 }

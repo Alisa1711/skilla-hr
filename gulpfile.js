@@ -66,6 +66,7 @@ gulp.task(`copy`, [`html`, `scripts`, `style`], () => {
     `fonts/**/*.{woff,woff2}`,
     `img/**/*.*`,
     `js/*.js`,
+    `css/**/*.css`,
     `!js/main.js`
   ], {base: `.`}).
     pipe(gulp.dest(`build`));
