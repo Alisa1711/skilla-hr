@@ -41,64 +41,64 @@ $(document).ready(function () {
   });
 
   // scroll
-  let anchors = [];
-  let currentAnchor = 0;
-  let isAnimating = false;
-
-  const updateAnchors = () => {
-    anchors = [];
-    $(`.anchor`).each(function (i, element) {
-      anchors.push($(element).offset().top);
-    });
-  };
-
-  const onMousewheel = (e) => {
-    e.preventDefault();
-    e.stopPropagation();
-    if (isAnimating) {
-      return false;
-    }
-    isAnimating = true;
-    // Increase or reset current anchor
-    if (e.originalEvent.wheelDelta >= 0) {
-      currentAnchor--;
-    } else {
-      currentAnchor++;
-    }
-    if (currentAnchor < 0) {
-      currentAnchor = 0;
-    }
-    if (currentAnchor > (anchors.length - 1)) {
-      currentAnchor = anchors.length - 1;
-    }
-    isAnimating = true;
-    $(`html, body`).animate({
-      scrollTop: parseInt(anchors[currentAnchor], 10)
-    }, 500, `swing`, function () {
-      isAnimating = false;
-    });
-
-    if ($(`.anchor`).eq(currentAnchor).attr(`id`)) {
-      const id = $(`.anchor`).eq(currentAnchor).attr(`id`);
-      $(`.header__nav-link`).
-        removeClass(`active`).
-        filter(`[href='#` + id + `']`).addClass(`active`);
-    } else {
-      $(`.header__nav-link`).removeClass(`active`);
-    }
-
-    updateAnchors();
-    return true;
-  };
-
-  $(window).on(`resize load`, () => {
-    if ($(window).width() > 1024) {
-      updateAnchors();
-      $(`body`).on(`mousewheel`, onMousewheel);
-    } else {
-      $(`body`).unbind(`mousewheel`, onMousewheel);
-    }
-  });
+  // let anchors = [];
+  // let currentAnchor = 0;
+  // let isAnimating = false;
+  //
+  // const updateAnchors = () => {
+  //   anchors = [];
+  //   $(`.anchor`).each(function (i, element) {
+  //     anchors.push($(element).offset().top);
+  //   });
+  // };
+  //
+  // const onMousewheel = (e) => {
+  //   e.preventDefault();
+  //   e.stopPropagation();
+  //   if (isAnimating) {
+  //     return false;
+  //   }
+  //   isAnimating = true;
+  //   // Increase or reset current anchor
+  //   if (e.originalEvent.wheelDelta >= 0) {
+  //     currentAnchor--;
+  //   } else {
+  //     currentAnchor++;
+  //   }
+  //   if (currentAnchor < 0) {
+  //     currentAnchor = 0;
+  //   }
+  //   if (currentAnchor > (anchors.length - 1)) {
+  //     currentAnchor = anchors.length - 1;
+  //   }
+  //   isAnimating = true;
+  //   $(`html, body`).animate({
+  //     scrollTop: parseInt(anchors[currentAnchor], 10)
+  //   }, 500, `swing`, function () {
+  //     isAnimating = false;
+  //   });
+  //
+  //   if ($(`.anchor`).eq(currentAnchor).attr(`id`)) {
+  //     const id = $(`.anchor`).eq(currentAnchor).attr(`id`);
+  //     $(`.header__nav-link`).
+  //       removeClass(`active`).
+  //       filter(`[href='#` + id + `']`).addClass(`active`);
+  //   } else {
+  //     $(`.header__nav-link`).removeClass(`active`);
+  //   }
+  //
+  //   updateAnchors();
+  //   return true;
+  // };
+  //
+  // $(window).on(`resize load`, () => {
+  //   if ($(window).width() > 1024) {
+  //     updateAnchors();
+  //     $(`body`).on(`mousewheel`, onMousewheel);
+  //   } else {
+  //     $(`body`).unbind(`mousewheel`, onMousewheel);
+  //   }
+  // });
 
   // slider
   const slider = $(`.slider`);
