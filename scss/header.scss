@@ -47,6 +47,8 @@
 }
 
 .header__nav {
+  margin-left: auto; // пока скрыт instagram
+  margin-right: auto; // пока скрыт instagram
   @media screen and(max-width: $desktop-small) {
     display: none;
   }
