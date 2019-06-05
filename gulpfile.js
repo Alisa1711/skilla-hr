@@ -11,6 +11,7 @@ const rename = require(`gulp-rename`);
 const imagemin = require(`gulp-imagemin`);
 const rigger = require(`gulp-rigger`);
 const babel = require(`gulp-babel`);
+const ghpages = require(`gh-pages`);
 
 gulp.task(`html`, () => {
   return gulp.src(`*.html`).
@@ -105,4 +106,8 @@ gulp.task(`assemble`, [`clean`], () => {
 
 gulp.task(`build`, [`assemble`], () => {
   gulp.start(`imagemin`);
+});
+
+gulp.task(`deploy`, () => {
+  ghpages.publish(`build`);
 });
