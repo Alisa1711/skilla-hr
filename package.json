@@ -22,7 +22,7 @@
     "gulp-rename": "1.4.0",
     "gulp-rigger": "0.5.8",
     "gulp-sass": "4.0.2",
-    "lodash": "4.17.11",
+    "lodash": "4.17.21",
     "stylelint-config-htmlacademy": "0.1.1"
   },
   "scripts": {
